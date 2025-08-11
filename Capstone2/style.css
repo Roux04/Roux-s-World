@@ -1,0 +1,221 @@
+@font-face {
+	font-family:'CrackaJack';
+	src: url('./CrackajackFree.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Frenstyle';
+    src: url(./fonts/Frenstyle.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Forbidden';
+    src: url(./fonts/Forbiden.otf) format('opentype');
+}
+body {
+    background-color: #BDD5EA;
+}
+
+#Nav {
+    background-color: #404E7C;
+    padding-bottom: 12px;
+    height: 30%;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;  
+    padding: 30px 20px 0px;
+}
+a {
+    text-decoration: none;
+    font-family: "CrackaJack";
+    color: #BDD5EA;
+    font-size: 1.5rem
+}
+
+
+#home{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+#me {
+    width: 294px;
+    height: 424px;
+ 
+}
+#rouxchet {
+    width: 100px;
+    height: 100px;
+    margin-top: -90px;
+    border-radius: 90%;
+}
+#me, #rouxchet {
+    animation: autoShowAnimation 1s both;
+    animation-timeline: view;
+}
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #251F47;
+    font-family: "Frenstyle";
+}
+#home  h4 {
+    font-family: "CrackaJack";
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    margin-top: -1px;;
+}
+#home  p {
+    font-size: 1rem;
+    color: #251F47;
+    margin-top: -10px;
+    font-family: "Forbidden";
+}
+#home div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    #home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1,p {
+    text-align: center;
+    }
+    h1 {
+        margin-top: -10px
+    } 
+    #me {
+        margin-top: -30px;
+    } 
+}
+
+#lns {
+    background-color: #251F47;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+}
+#lns h3 {
+    color: white;
+    font-family: "Frenstyle";
+    padding: 20px;
+    text-align: center;
+    padding-top: 0px;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+#lan, #skill {
+    padding: 20px 30px;
+}
+@media (max-width: 768px) {
+    #lns {
+        flex-direction: column;
+        align-items: center;
+    }
+    h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.primage {
+    width: 382px;
+    height: 285px;
+    padding: 30px;
+    filter: drop-shadow(8px 0px 10px black);
+    border-radius: 50px;
+}
+#projects{
+    display:grid;
+    grid-template-rows: 1fr 3fr;   
+    grid-template-columns: repeat(3, 1fr); 
+}
+#header {
+    text-align: center;
+    font-size:2.5em;
+    margin-bottom: -70px;
+    grid-column: 1/4;
+    font-family: "Frenstyle";
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    border-radius: 30px;
+    padding-top: 20px;
+    animation: autoShowAnimation 1s both;
+    animation-timeline: view(30% 0%);
+}
+#Tindog {
+    background-color:#404E7C;
+}
+#MA {
+    background-color: #251F47;
+}
+#Chef {
+    background-color: #260F26;
+}
+
+.prtext{
+    color:#BDD5EA;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -30px 20px 10px 20px;
+    text-align: center;
+}
+.prtext h3 {
+    font-size: 2em;
+    margin-bottom: -10px;
+}
+.prtext a {
+    padding: 25px 20px; 
+    margin-bottom: 10px;
+    background-color: #BDD5EA;
+    border-radius: 15px;
+}
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 800px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }  
+}
+#contact {
+    background-color: #404E7C;
+    color: #BDD5EA;
+    text-align: center;
+    padding: 20px 20px;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+p {
+    font-style: Tahoma, sans-serif;
+}
